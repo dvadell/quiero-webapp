@@ -1,0 +1,20 @@
+<%- include('includes/header') %>
+  <body>
+    <form action="/q/<%= title %>" method="POST">
+    <div style="display: inline-block"></div>
+    <h1><%= title %></h1><button type="submit" class="btn btn-primary">Save</button>
+  </div>
+      <div class="form-group">
+        <label>Descripción</label>
+        <textarea name="description" class="form-control"><%= description %></textarea>
+      </div>
+      <div class="form-group"></div>
+        <label>Pros</label>
+          <textarea name="pros" class="form-control"><%= pros %></textarea>
+        <label>Cons</label>
+          <textarea name="cons" class="form-control"><%= cons %></textarea>
+      </div>
+      </div>
+    </form>
+  </body>
+</html>

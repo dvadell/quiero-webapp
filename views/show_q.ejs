@@ -1,0 +1,29 @@
+<%- include('includes/header') %>
+  <body>
+    <%- include('includes/navbar', {title: title}) %>
+    
+    <div id="content" class="content">
+        <div class="row">
+            <div class="col-md-3 card card-body bg-light">
+                <h2><span id="pros-icon" class="fa fa-edit" style="font-size: 20px; margin-right: 10px;"></span>Pros</h2>
+                <div id="pros">
+                    Fetching pros...
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h2><span id="description-icon" class="fa fa-edit" style="font-size: 20px; margin-right: 10px;"></span></h2>
+                <div id="description">
+                    Fetching description...
+                </div>
+            </div>
+            <div class="col-md-3 card card-body bg-light">
+                <h2><span id="cons-icon" class="fa fa-edit" style="font-size: 20px; margin-right: 10px;"></span>Cons</h2>
+                <div id="cons">
+                    Fetching cons...
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/public/index.js"></script>
+  </body>
+</html>
